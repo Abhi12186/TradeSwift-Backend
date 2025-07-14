@@ -305,6 +305,12 @@ await  newOrder.save();
   res.send("Order saved!");
 });
 
+// ... आपका बाकी backend code
+
+app.get("/", (req, res) => {
+  res.send("✅ TradeSwift Backend is Running!");
+});
+
 app.listen(PORT, () => {
   console.log("App started!");
   mongoose.connect(uri);
